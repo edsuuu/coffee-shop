@@ -9,12 +9,12 @@ font-family: 'Sriracha', cursive;font-family: 'Sriracha', cursive;
 
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.logo img{
+.logo img {
     width: 80px;
     position: relative;
     left: 10%;
@@ -34,7 +34,7 @@ nav {
     top: -50%;
     transform: translateY(40%);
     list-style: none;
-    
+
 }
 
 .nav-links a {
@@ -43,32 +43,37 @@ nav {
     font-weight: bold;
     font-size: 1.3em;
 }
+
 .container {
     background-color: #be9b7988;
-    width: 98,5vw;
+    width: 98, 5vw;
     height: 768px;
     border: 1px solid black;
     display: flex;
     align-items: center;
-    margin: 0; 
+    margin: 0;
 }
+
 .conteudo {
     margin-left: 10%;
     width: 45%;
     display: inline-block;
     position: relative;
     transform: translateY(-50%);
-    
+
 }
+
 .conteudo h3 {
     font-size: 4em;
     font-family: Sriracha;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
 }
+
 .conteudo p {
     font-size: 1.2em;
 }
-.conteudo .btn { 
+
+.conteudo .btn {
     display: inline-block;
     margin: 20px;
     /* border: 1px solid black; */
@@ -76,6 +81,7 @@ nav {
     left: 30%;
     transform: translateY(70%);
 }
+
 .conteudo .btn a {
     text-decoration: none;
     border-radius: 14px;
@@ -89,6 +95,7 @@ nav {
     padding-right: 20px;
     color: white;
 }
+
 .conteudo .btn a:hover {
     background-color: rgba(255, 255, 255, 0.144);
     color: black;
