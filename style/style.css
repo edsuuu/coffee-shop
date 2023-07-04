@@ -96,19 +96,12 @@ nav {
     color: white;
 }
 
-
-
-
 .conteudo .btn a:hover {
     background-color: rgba(255, 255, 255, 0.144);
     color: black;
     transition: .7s;
 
 }
-
-
-
-
 
 .container2 {
     background-color: #be9b7988;
@@ -119,25 +112,31 @@ nav {
     align-items: center;
     margin: 0;
 }
+
 .container3 {
     background-color: #be9b7988;
     width: 98, 5vw;
     height: 768px;
     border: 1px solid black;
-    
-    
+
+
 }
+
 .box-container {
     display: inline-flex;
     width: 98, 5vw;
     height: 768px;
+    
 }
 
 .galeria {
     width: 98, 5vw;
     height: 768px;
+
 }
-.galeria img{
+
+.galeria img {
     width: 300px;
     height: 300px;
+
 }
