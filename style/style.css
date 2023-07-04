@@ -5,7 +5,7 @@
 /* 
 font-family: 'Inter', sans-serif;
 font-family: 'Passion One', cursive;
-font-family: 'Sriracha', cursive;
+font-family: 'Sriracha', cursive;font-family: 'Sriracha', cursive;
 
 */
 
@@ -15,7 +15,7 @@ font-family: 'Sriracha', cursive;
 }
 
 .logo img{
-    width: 90px;
+    width: 80px;
     position: relative;
     left: 10%;
     transform: translatex(170%);
@@ -44,9 +44,53 @@ nav {
     font-size: 1.3em;
 }
 .container {
-    width: 1200px;
+    background-color: #be9b7988;
+    width: 98,5vw;
+    height: 768px;
     border: 1px solid black;
     display: flex;
     align-items: center;
+    margin: 0; 
+}
+.conteudo {
+    margin-left: 10%;
+    width: 45%;
+    display: inline-block;
+    position: relative;
+    transform: translateY(-50%);
     
+}
+.conteudo h3 {
+    font-size: 4em;
+    font-family: Sriracha;
+    margin-bottom: 20px;  
+}
+.conteudo p {
+    font-size: 1.2em;
+}
+.conteudo .btn { 
+    display: inline-block;
+    margin: 20px;
+    /* border: 1px solid black; */
+    position: relative;
+    left: 30%;
+    transform: translateY(70%);
+}
+.conteudo .btn a {
+    text-decoration: none;
+    border-radius: 14px;
+    margin: auto;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #be9c79;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+.conteudo .btn a:hover {
+    background-color: rgba(255, 255, 255, 0.144);
+    color: black;
+    transition: .7s;
 }
