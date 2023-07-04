@@ -9,29 +9,42 @@ font-family: 'Sriracha', cursive;font-family: 'Sriracha', cursive;
 
 */
 
+:root {
+    --bg-color: #be9c79;
+    
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
+html, body {
+    background-color: #be9c79;
+}
+
 .logo img {
-    width: 80px;
-    position: relative;
-    left: 10%;
-    transform: translatex(170%);
+    width: 200px;
+    position: absolute;
+    left: 5%;
+    transform: translateY(05%); 
 }
 
 nav {
     display: flex;
-    background: gray;
+    background: rgba(102, 101, 101, 0.89);
+    width: 100vw;
+    height: 65px;
+    position: fixed;
+    box-shadow: inset 2px 6px 13px 0px rgba(0, 0, 0, 0.521);
 }
 
 .nav-links {
     display: inline-flex;
     gap: 50px;
     position: relative;
-    left: 50%;
-    top: -50%;
+    left: 65%;
+    top: -05%;
     transform: translateY(40%);
     list-style: none;
 
@@ -45,7 +58,9 @@ nav {
 }
 
 .container {
-    background-color: #be9b7988;
+    background: url(../img/bg-img.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;    
     width: 98, 5vw;
     height: 768px;
     border: 1px solid black;
@@ -57,10 +72,6 @@ nav {
 .conteudo {
     margin-left: 10%;
     width: 45%;
-    display: inline-block;
-    position: relative;
-    transform: translateY(-50%);
-
 }
 
 .conteudo h3 {
@@ -77,9 +88,7 @@ nav {
     display: inline-block;
     margin: 20px;
     /* border: 1px solid black; */
-    position: relative;
-    left: 30%;
-    transform: translateY(70%);
+    
 }
 
 .conteudo .btn a {
@@ -111,6 +120,10 @@ nav {
     display: flex;
     align-items: center;
     margin: 0;
+}
+
+.container2 .image {
+    width: 300px;
 }
 
 .container3 {
