@@ -19,10 +19,7 @@ font-family: 'Sriracha', cursive;font-family: 'Sriracha', cursive;
     padding: 0;
 }
 
-html,
-body {
-    background-color: #be9c79;
-}
+
 
 .logo img {
     left: 5%;
@@ -33,7 +30,8 @@ body {
 
 nav {
     background: rgb(152, 152, 152);
-    box-shadow: inset 2px 6px 13px 0px rgba(0, 0, 0, 0.521);
+    /* box-shadow: inset 2px 6px 13px 0px rgb(0, 0, 0, 0.521); */
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.479);
     display: flex;
     height: 65px;
     position: fixed;
@@ -64,11 +62,12 @@ nav {
 
 .container {
     align-items: center;
-    background: url(../img/bg-img.jpg) no-repeat;
-    background-position: top center;
+    background: url(../img/bg-img1.png) no-repeat;
+    background-position:left center;
     background-attachment: fixed;
     background-size: cover;
-
+    border: 1px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.479);
     display: flex;
     height: 768px;
     margin: 0;
@@ -93,16 +92,16 @@ nav {
 }
 
 .conteudo .btn {
-    display: inline-block;
-    margin: 20px;
-    /* border: 1px solid black; */
+    display: flex;
+    margin: 50px;
+    justify-content: center;
 
 }
 
 .conteudo .btn a {
+    
     text-decoration: none;
     border-radius: 14px;
-    margin: auto;
     font-size: 1.2em;
     font-weight: bold;
     background-color: #be9c79;
@@ -120,26 +119,28 @@ nav {
 
 }
 
-.container-2 {
-    background-color: #ffffff;
-    width: 98, 5vw;
-    height: 768px;
-    /* border: 1px solid black; */
+.section {
+    width: 100%;
     display: flex;
-    align-items: center;
-    margin: 0;
+    border: 1px solid black;
+}
+.coffee-drink img { 
+    margin: 30px;
+    width: 400px;
 }
 
-/* .container-2 .image {
-    width: auto;
+.contant-coffee {
+    margin-top: 50px;
+    text-align: center;
+    
+   
+
 }
 
-.container-2 .image img{
-    width: 300px;
-} */
-
-
-
+.contant-coffee h3 {
+    font-size: 2em;
+    display: block;
+    margin: auto;
 
 /* 
 .container3 {
