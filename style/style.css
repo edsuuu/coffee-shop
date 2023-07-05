@@ -11,7 +11,7 @@ font-family: 'Sriracha', cursive;font-family: 'Sriracha', cursive;
 
 :root {
     --bg-color: #be9c79;
-    
+
 }
 
 * {
@@ -19,54 +19,60 @@ font-family: 'Sriracha', cursive;font-family: 'Sriracha', cursive;
     padding: 0;
 }
 
-html, body {
+html,
+body {
     background-color: #be9c79;
 }
 
 .logo img {
-    width: 200px;
-    position: absolute;
     left: 5%;
-    transform: translateY(05%); 
+    position: absolute;
+    transform: translateY(05%);
+    width: 200px;
 }
 
 nav {
+    background: rgb(152, 152, 152);
+    box-shadow: inset 2px 6px 13px 0px rgba(0, 0, 0, 0.521);
     display: flex;
-    background: rgba(102, 101, 101, 0.89);
-    width: 100vw;
     height: 65px;
     position: fixed;
-    box-shadow: inset 2px 6px 13px 0px rgba(0, 0, 0, 0.521);
+    width: 100vw;
 }
 
 .nav-links {
     display: inline-flex;
     gap: 50px;
+    left: 62%;
+    list-style: none;
     position: relative;
-    left: 65%;
     top: -05%;
     transform: translateY(40%);
-    list-style: none;
-
 }
 
 .nav-links a {
-    text-decoration: none;
     color: white;
-    font-weight: bold;
     font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: orange;
+    transition: all .3s;
 }
 
 .container {
-    background: url(../img/bg-img.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;    
-    width: 98, 5vw;
-    height: 768px;
-    border: 1px solid black;
-    display: flex;
     align-items: center;
+    background: url(../img/bg-img.jpg) no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    height: 768px;
     margin: 0;
+    width: 98, 5vw;
 }
 
 .conteudo {
@@ -76,19 +82,21 @@ nav {
 
 .conteudo h3 {
     font-size: 4em;
-    font-family: Sriracha;
+    font-family: 'Sriracha', 'cursive';
     margin-bottom: 20px;
+    color: white;
 }
 
 .conteudo p {
     font-size: 1.2em;
+    color: white;
 }
 
 .conteudo .btn {
     display: inline-block;
     margin: 20px;
     /* border: 1px solid black; */
-    
+
 }
 
 .conteudo .btn a {
@@ -112,20 +120,25 @@ nav {
 
 }
 
-.container2 {
-    background-color: #be9b7988;
+.container-2 {
+    background-color: #ffffff;
     width: 98, 5vw;
     height: 768px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     align-items: center;
     margin: 0;
 }
 
-.container2 .image {
+.container-2 .image {
     width: 300px;
 }
 
+
+
+
+
+/* 
 .container3 {
     background-color: #be9b7988;
     width: 98, 5vw;
@@ -139,7 +152,7 @@ nav {
     display: inline-flex;
     width: 98, 5vw;
     height: 768px;
-    
+
 }
 
 .galeria {
@@ -152,4 +165,4 @@ nav {
     width: 300px;
     height: 300px;
 
-}
+} */
