@@ -1,4 +1,4 @@
-# coffe-shop
+# Coffee Shop
 
 <h1>Acesse o Projeto</h1>
 <br>
