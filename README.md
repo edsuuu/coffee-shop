@@ -1,5 +1,8 @@
 # coffe-shop
-<h1 style="text-align: center;">Acesse o Projeto</h1>
+<style>
+  text-align: center;
+  margin: auto;
+</style>
+<h1>Acesse o Projeto</h1>
 <br>
-<br>
-<a href="https://edsuuu.github.io/coffee-shop/" target="_blank" style="text-align: center;">Coffee Shop</a>
+<a href="https://edsuuu.github.io/coffee-shop/" target="_blank">Coffee Shop</a>
