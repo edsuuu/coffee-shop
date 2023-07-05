@@ -130,10 +130,13 @@ nav {
     margin: 0;
 }
 
-.container-2 .image {
-    width: 300px;
+/* .container-2 .image {
+    width: auto;
 }
 
+.container-2 .image img{
+    width: 300px;
+} */
 
 
 
