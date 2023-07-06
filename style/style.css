@@ -34,8 +34,8 @@ nav {
     box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.479);
     display: flex;
     height: 65px;
-    position: fixed;
-    width: 100vw;
+    
+    width: 100%;
 }
 
 .nav-links {
@@ -62,39 +62,76 @@ nav {
 
 .container {
     align-items: center;
-    background: url(../img/bg-img1.png) no-repeat;
+    background: url(../img/bg-img1.png.) no-repeat;
     background-position:left center;
-    background-attachment: fixed;
     background-size: cover;
     border: 1px;
-    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.479);
-    display: flex;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.479);
     height: 768px;
-    margin: 0;
-    width: 98, 5vw;
+    
 }
-
-.conteudo {
-    margin-left: 10%;
-    width: 45%;
-}
-
-.conteudo h3 {
+.content-one h1{
+    
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    padding: 20px;
+    /* display: flex;
+    justify-content: center; */
     font-size: 4em;
     font-family: 'Sriracha', 'cursive';
-    margin-bottom: 20px;
-    color: white;
+    color: black;
+}
+.content-one p {
+    width: 40%;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 12%;
 }
 
-.conteudo p {
-    font-size: 1.2em;
-    color: white;
+.content-one .btn {
+    width: 150px;
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    border: 1px solid rgb(5, 5, 5);
+} 
+
+@media screen and (max-width: 768px) {
+
+    .content-one p {
+        text-align: center;
+        width: 80%;
+        font-size: 1.4em;
+        position: absolute;
+        top: 50%;
+        
+    }
+
+
+    .content-one .btn {
+        width: 150px;
+        position: absolute;
+        top: 75%;
+        left: 20%;
+        border: 1px solid rgb(5, 5, 5);
+    } 
 }
+
+    
+
+
+/*
+
+
 
 .conteudo .btn {
+    width: auto;
     display: flex;
     margin: 50px;
-    justify-content: center;
+    
+    
 
 }
 
@@ -117,30 +154,8 @@ nav {
     color: black;
     transition: .7s;
 
-}
+} */
 
-.section {
-    width: 100%;
-    display: flex;
-    border: 1px solid black;
-}
-.coffee-drink img { 
-    margin: 30px;
-    width: 400px;
-}
-
-.contant-coffee {
-    margin-top: 50px;
-    text-align: center;
-    
-   
-
-}
-
-.contant-coffee h3 {
-    font-size: 2em;
-    display: block;
-    margin: auto;
 
 /* 
 .container3 {
