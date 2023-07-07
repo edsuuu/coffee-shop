@@ -14,18 +14,13 @@
         text-align: center;
         width: 80%;
         font-size: 1.4em;
-        position: absolute;
-        top: 50%;
+        
 
     }
 
 
     .content-one .btn {
         width: 150px;
-        position: absolute;
-        top: 72%;
-        left: 38%;
-
     }
 
     /* .section-one {
