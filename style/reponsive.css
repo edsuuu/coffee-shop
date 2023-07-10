@@ -1,15 +1,16 @@
 @charset "uft-8";
 
-/* Resposividade pagina home 'Content-one'  */
+ /* Resposividade pagina home 'Content-one'   */
 
 
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 768px) {
 
-    .content-one {
-        margin: -70px 1% -20px;
-        width: 100%;
-        font-size: 2.4em;
+     .content-one {
+        margin: auto 1% -20px;
+        margin-top: 0px;
+        width: 95vw;
+        font-size: 2.2em;
         text-align: center;
        
     }
@@ -18,17 +19,11 @@
         width: 80%;
     }
 
-    /* TAG DE MARGIN CIMA, ESQUERDA, BAIXO, DIREITA */
+   /* TAG DE MARGIN CIMA, ESQUERDA, BAIXO, DIREITA  */
+
+
     .container .btn {
       margin: 40px auto 30px auto;
-    }
-
-
-
-
-
-
-
-
+    } 
 
 }
