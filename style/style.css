@@ -60,43 +60,50 @@ nav {
 }
 
 .container {
-    
+
     color: white;
+    display: flex;
+    gap: 30px;
     align-items: center;
-    background: url(../img/bg-img1.png) repeat;
+    justify-content: center;
+    flex-direction: column;
+
+    background: url(../img/bg-img1.png) no-repeat;
     background-position: left center;
     background-size: cover;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.479);
-    height: 768px;
+    height: 700px;
 
 }
+
 .content-one {
-   margin-top: 5px;
-}
-
-
-/* .content-one h1 {
-    
+    align-self: start;
+    margin: -70px 12% -20px;
+    font-family: 'Sriracha', cursive;
     color: white;
-    font-size: 4.5em;
-    font-family: 'Sriracha', 'cursive';
-    
+    font-size: 3em;
 }
 
-.content-one p {
-    display: flex;
+.content-two {
 
+    align-self: start;
+    margin-left: 12%;
+    text-align: justify;
     width: 60%;
-    font-size: 1.1em;
+    font-size: 1.4em;
+    margin-top: 5px;
 }
 
-.content-one .btn {
+.container .btn {
+    align-self: start;
+    margin-top: 40px;
+    margin-left: 23%;
     width: 150px;
-    
     border: 1px solid rgb(5, 5, 5);
     border-radius: 10px;
 }
-.content-one .btn a {
+
+.container .btn a {
     background-color: orange;
     border-radius: 10px;
     color: white;
@@ -108,16 +115,36 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
     width: 90px;
-    
+
 }
 
-.content-one .btn a:hover{
+.container .btn a:hover {
     background-color: rgba(247, 206, 129, 0.986);
     color: black;
-    transition: .4s; */
+    transition: .4s;
+}
+
+.container-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffee-drink {
+    width: 300px;
+    height: 300px;
+}
+
+.coffee-drink img {
+    width: 300px;
+}
 
 
-.section-one {
+
+
+
+/* .section-one {
     display: flex;
     width: 99.9%;
     border: 1px solid black;
@@ -188,15 +215,16 @@ nav {
 }
 
 .container-tree {
+    display: flex;
     border: 1px solid black;
     margin-bottom: 30px;
 }
 
 .container-tree .box-container {
-    display: inline-flex;
+    
     width: 100%;
 
-}
+} */
 
 /* 
 .container3 {
