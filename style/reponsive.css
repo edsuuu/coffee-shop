@@ -6,6 +6,10 @@
 
 @media screen and (max-width: 768px) {
 
+    .container {
+        height: 80vh;
+    }
+
     #content-one {
         margin: auto 1% -20px;
         margin-top: 0px;
@@ -16,8 +20,10 @@
     }
 
     #content-two {
-        width: 80%;
-        font-size: 1.1em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        font-size: 1.4em;
     }
 
     /* TAG DE MARGIN CIMA, ESQUERDA, BAIXO, DIREITA  */
@@ -36,18 +42,27 @@
     }
 
     #coffee-drink {
-        align-self: center;
+        margin: auto;
+        margin-top: 20px;
         margin-bottom: 30px;
+        width: 400px;
+        height: 400px;
+    }
+
+    #coffee-drink img {
+        width: 400px;
     }
 
     .box-container {
         display: flex;
         flex-direction: column;
     }
+
     .box-container-two {
         display: flex;
         flex-direction: column;
     }
 
+    /* #title  */
 
 }
