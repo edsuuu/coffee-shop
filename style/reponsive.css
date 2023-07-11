@@ -44,4 +44,10 @@
         display: flex;
         flex-direction: column;
     }
+    .box-container-two {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
