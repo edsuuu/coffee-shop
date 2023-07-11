@@ -152,7 +152,7 @@ nav {
 #coffee-drink {
     margin: 30px 0px 20px 40px;
     align-self: flex-start;
-    border: 1px solid black;
+    border-radius: 15px;
     width: 350px;
     height: 350px;
 }
