@@ -161,9 +161,11 @@ nav {
     width: 350px;
 }
 
-.container-two #btn {
-    display: none;
-    align-self: end;
+#title #btn {
+    /*  CORRIGIR O BOTA MENU 
+     */
+
+     display: none;
     width: 150px;
     border: 1px solid rgb(5, 5, 5);
     border-radius: 10px;
