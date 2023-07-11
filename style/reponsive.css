@@ -6,7 +6,7 @@
 
 @media screen and (max-width: 768px) {
 
-    .content-one {
+    #content-one {
         margin: auto 1% -20px;
         margin-top: 0px;
         width: 95vw;
@@ -15,16 +15,33 @@
 
     }
 
-    .content-two {
+    #content-two {
         width: 80%;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     /* TAG DE MARGIN CIMA, ESQUERDA, BAIXO, DIREITA  */
 
 
-    .container .btn {
+    .container #btn {
         margin: 40px auto 30px auto;
     }
 
+    .container-two {
+        flex-direction: column;
+    }
+
+    .container-two #title {
+        margin-bottom: 20px;
+    }
+
+    #coffee-drink {
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    .box-container {
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -66,7 +66,7 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    
     background: url(../img/bg-img1.png) no-repeat;
     background-position: left center;
     background-size: cover;
@@ -75,7 +75,7 @@ nav {
 
 }
 
-.content-one {
+#content-one {
     align-self: start;
     margin: -70px 12% -20px;
     font-family: 'Sriracha', cursive;
@@ -83,7 +83,7 @@ nav {
     font-size: 3em;
 }
 
-.content-two {
+#content-two {
 
     align-self: start;
     margin-left: 12%;
@@ -93,7 +93,7 @@ nav {
     margin-top: 5px;
 }
 
-.container .btn {
+.container #btn {
     align-self: start;
     margin-top: 40px;
     margin-left: 23%;
@@ -102,7 +102,7 @@ nav {
     border-radius: 10px;
 }
 
-.container .btn a {
+.container #btn a {
     background-color: orange;
     border-radius: 10px;
     color: white;
@@ -117,133 +117,115 @@ nav {
 
 }
 
-.container .btn a:hover {
+.container #btn a:hover {
     background-color: rgba(247, 206, 129, 0.986);
     color: black;
     transition: .4s;
 }
 
 .container-two {
+    background-color: lightgray;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row-reverse; 
 }
 
-.coffee-drink {
-    width: 300px;
-    height: 300px;
-}
-
-.coffee-drink img {
-    width: 300px;
-}
-
-
-
-/*
-.section-one {
-    display: flex;
-    width: 99.9%;
-    border: 1px solid black;
-}
-
-.section-one img{
-
-    display: block;
-    border-radius: 12px;
-    margin: 40px 40px 40px 40px;
-    width: 450px;
-    height: 450px;
-}
-.contant-coffee { 
-    width: 100%;
-    border: 1px solid black;
-}
-.contant-coffee h1 {
-    margin-top: 50px;
-    font-family: 'Sriracha', 'cursive';
-    text-align: center;
-    font-size: 2.7em;
-    margin-bottom: -15px;
-}
-.contant-coffee h2 {
-    font-family: 'Sriracha', 'cursive';
-    text-align: center;
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-.contant-coffee p {
-
-    display: flex;
-    margin: 20px 70px 30px 70px;
-    text-align: justify;
-    justify-content: center;
-    font-size: 1.1em;
-    margin-bottom: 40px;
-}
-
-.contant-coffee .btn {
-    margin-top: 30px;
-    width: 150px;
+#title {  
     margin: auto;
-    margin-bottom: 30px;
-    border: 1px solid rgb(5, 5, 5);
-    border-radius: 10px;
-}
-.contant-coffee .btn a {
-    color: white;
-    font-family: 'Passion One', cursive;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 10px;
-    background-color: orange;
-    width: 90px;
-    padding: 11px 30px 10px 30px;
+    text-align: center;
+    width: 90%;
     
 }
 
-.contant-coffee .btn a:hover{
+#title h1 {
+    margin-top: 30px;
+    font-size: 3.2em;
+}
+#title h2 {
+    font-size: 2.0em;
+    margin-bottom: 30px;
+}
+#title p {
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+#coffee-drink {
+    margin: 20px;
+    align-self: flex-start;
+    border: 1px solid black;
+    width: 350px;
+    height: 350px;
+}
+
+#coffee-drink img {
+    width: 350px;
+}
+
+.container-two #btn {
+    display: none;
+    align-self: end;
+    width: 150px;
+    border: 1px solid rgb(5, 5, 5);
+    border-radius: 10px;
+}
+
+.container-two #btn a {
+    background-color: orange;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    font-family: 'Passion One', cursive;
+    font-size: 20px;
+    justify-content: center;
+    padding: 11px 30px 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 90px;
+
+}
+
+.container-two #btn a:hover {
     background-color: rgba(247, 206, 129, 0.986);
     color: black;
     transition: .4s;
 }
 
+
 .container-tree {
     display: flex;
-    border: 1px solid black;
-    margin-bottom: 30px;
+    border: 1px solid;
+    flex-direction: column;
 }
 
-.container-tree .box-container {
-    
-    width: 100%;
-
-} 
-
-
-.container3 {
-    background-color: #be9b7988;
-    width: 98, 5vw;
-    height: 768px;
-    border: 1px solid black;
-
-
+.variedades {
+    align-self: center;
 }
 
-
-
-.galeria {
-    width: 98, 5vw;
-    height: 768px;
-
+.variedades h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 4em;
 }
 
-.galeria img {
+.box-container {
+    display: inline-flex;
+    gap: 50px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.box {
+    border: 1px solid;
     width: 300px;
-    height: 300px;
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+}
 
-} */
+.box img {
+    
+    width: 150px;
+    border: 1px solid;
+}
+
