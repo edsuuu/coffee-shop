@@ -58,6 +58,26 @@ nav {
     color: orange;
     transition: all .3s;
 }
+/* span {
+    position: relative;
+    left: 85%;
+}
+#burguer {
+    margin-top: 5px;
+    font-size: 2em;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+#burguer:hover {
+    color: orange;
+    transition: all .3s;
+}  */
+
 
 .container {
     color: white;
