@@ -75,8 +75,8 @@ Desktop: 992px ate 1200px
 Tv: acima de 1200px 
 */
 
-/* @media screen and (min-width: 600px)
-{
+/* @media screen and (min-width: 600px){
+
     #burguer {
         display: none;
     }
@@ -85,22 +85,17 @@ Tv: acima de 1200px
     }
     nav ul li {
         display: inline-block;
-    }
-
-    
+    }   
 
 } */
 
 
-
-/* MENU RESPONSIVO PARA APLICAR 
- */
+/* MENU RESPONSIVO PARA APLICAR */
 
 /*
 
 header {
     background-color: gray;
-
 }
 
 #burguer {
