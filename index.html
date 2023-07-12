@@ -12,18 +12,18 @@
     <title>Coffee Shop</title>
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <nav id="itens">
-            <!-- <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">Menu</span> -->
+            <!-- <a href="#"><img src="img/logo.png" alt="logo"></a> -->
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">Menu</span>
             <div class="logo">
-                <a href="#"><img src="img/logo.png" alt="logo"></a>
             </div>
             <ul class="nav-links">
                 <li><a href="#">Principal</a></li>
                 <li><a href="#">Sobre</a></li>
-                <!-- <li><a href="#">Contato</a></li>
-                <li><a href="#">Cardápio</a></li>  -->
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Cardápio</a></li>
             </ul>
         </nav>
     </header>
@@ -174,17 +174,7 @@
     </footer>
 
 
-    <script>
-
-        function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
-
-    </script>
+    
 </body>
 
 </html>

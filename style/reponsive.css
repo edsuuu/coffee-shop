@@ -63,20 +63,82 @@
         flex-direction: column;
     }
 
-    /* #title  */
+
 
 }
 
-@media screen and (min-width: 768px) {
+
+/* Typical device break points
+Celular: ate 600px
+Tablet: 768px ate  992px
+Desktop: 992px ate 1200px 
+Tv: acima de 1200px 
+*/
+
+/* @media screen and (min-width: 600px)
+{
     #burguer {
         display: none;
     }
-
-    .nav {
+    nav {
         display: block;
     }
-
-    .nav ul li {
+    nav ul li {
         display: inline-block;
     }
-} 
+
+    
+
+} */
+
+
+
+/* MENU RESPONSIVO PARA APLICAR 
+ */
+
+/*
+
+header {
+    background-color: gray;
+
+}
+
+#burguer {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: inline-block;
+    position: relative;
+    left: 92%;
+    width: 5vw;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    background-color: white;
+    color: black;
+
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(78, 78, 78);
+    color: white;
+    text-align: center;
+    border-top: 2px solid gray;
+}
+
+nav ul li a:hover {
+    background-color: gray;
+} */
