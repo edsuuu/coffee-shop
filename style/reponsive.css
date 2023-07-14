@@ -138,9 +138,14 @@ nav ul li a:hover {
 } */
 
 
-@media (max-width: 450px){
-    
-    .footer {
-        font-size: 60%;
+@media (min-width: 450px){
+
+    ::-webkit-scrollbar {
+        height: .2rem;
+        width: .9rem;
+    }
+
+    html{
+        font-size: 67%;
     }
 }

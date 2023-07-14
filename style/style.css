@@ -23,10 +23,10 @@ font-family: 'Merienda One', cursive;
 }
 
 * {
-    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
     margin: 0;
     padding: 0;
-    outline: none; border: none; box-sizing: border-box;
+    
     /* text-transform: capitalize; */
     text-decoration: none;
 
@@ -38,8 +38,8 @@ font-family: 'Merienda One', cursive;
 }
 
 ::-webkit-scrollbar {
-    height: .5rem;
-    width: 1rem;
+    height: .2rem;
+    width: .6rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -52,6 +52,7 @@ font-family: 'Merienda One', cursive;
 
 
 html{
+    
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
