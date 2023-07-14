@@ -138,7 +138,7 @@ nav ul li a:hover {
 } */
 
 
-@media (min-width: 450px){
+@media (max-width: 550px){
 
     ::-webkit-scrollbar {
         height: .2rem;
@@ -146,6 +146,6 @@ nav ul li a:hover {
     }
 
     html{
-        font-size: 67%;
+        font-size: 62%;
     }
 }
