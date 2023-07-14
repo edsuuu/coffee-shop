@@ -23,7 +23,11 @@ font-family: 'Merienda One', cursive;
 
 }
 
-
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
 
 .logo img {
     left: 5%;
@@ -266,4 +270,50 @@ nav {
     text-align: center;
     padding: 20px 10px 10px 10px;
 
+}
+
+
+
+.footer .footer-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+.footer .footer-container .footer-box{
+    text-align: center;
+    
+}
+.footer .footer-container .footer-box i{
+    font-size: 2.5rem;
+    line-height: 6rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color:  #be9c79;
+    color: white;
+    margin-bottom: .5rem;
+}
+.footer .footer-container .footer-box h1{
+    font-size: 1.8rem;
+    margin: .1rem 0;
+    font-weight: 2rem;
+    color: black;
+}
+.footer .footer-container .footer-box p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color: #666;
+}
+.footer .credit{
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-top: .2rem solid black;
+    font-size: 1.6rem;
+    color: black;
+}
+.footer .credit span{
+    color:  #be9c79;
 }
