@@ -102,63 +102,6 @@ html {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    #menu-btn {
-        display: inline-block;
-        transition: .2s linear;
-    }
-
-
-#menu-btn.fa-times {
-    transform: rotate(180deg);
-}
-
-.header .flex .navbar {
-    text-align: center;
-    width: 200px;
-    position: absolute;
-    top: 99%;
-    left: 70.6%;
-    right: 30;
-    background-color: var(--white);
-    border-top: var(--border);
-    border-bottom: var(--border);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: .3s linear;
-}
-
-.header .flex .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.header .flex .navbar a {
-    border-bottom: 1px solid;
-    text-align: center;
-    display: block;
-    margin: 2rem;
-}
-}
-
-@media (max-width: 550px) {
-    
-
-    .heading img {
-        height: 3rem;
-    }
-    .header .flex .navbar {
-        text-align: center;
-        width: 200px;
-        position: absolute;
-        top: 99%;
-        left: 60%;
-        right: 30;
-        background-color: var(--white);
-        border-top: var(--border);
-        border-bottom: var(--border);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: .3s linear;
-    }
-}
 
 .container {
     color: white;
