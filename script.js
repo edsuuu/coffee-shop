@@ -1,18 +1,12 @@
+let menu = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.header .flex .navbar');
 
-
-function clickMenu() {
-    if (itens.style.display == 'block') {
-        itens.style.display = 'none'
-    } else {
-        itens.style.display = 'block'
-    }
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
 }
 
-function mudouTamanho() {
-    if (window.innerWidth >= 600) {
-        itens.style.display = 'block'
-    }
-    else {
-        itens.style.display = 'none'
-    }
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
 }

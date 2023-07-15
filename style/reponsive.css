@@ -138,16 +138,6 @@ nav ul li a:hover {
 } */
 
 
-@media (min-width: 350px){
-
-    ::-webkit-scrollbar {
-        height: .2rem;
-        width: .9rem;
-    }
-
-    html{
-        font-size: 52%;
-    }
-}
 
 
+      

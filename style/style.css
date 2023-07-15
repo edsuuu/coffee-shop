@@ -19,7 +19,6 @@ font-family: 'Merienda One', cursive;
     --light-color:#666666; 
     --border: 0.2rem solid var(--black);
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-
 }
 
 * {
@@ -58,44 +57,83 @@ html{
     scroll-padding-top: 6rem;
 }
 
-.logo img {
-    left: 5%;
-    position: absolute;
-    transform: translateY(05%);
-    width: 200px;
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    background-color: rgb(116, 112, 112);
+    box-shadow: var(--box-shadow);
+    
 }
-
-nav {
-    background-color: gray;
-    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.479);
+.header .flex{
     display: flex;
-    height: 65px;
-    width: 100%;
-}
-
-.nav-links {
-    display: inline-flex;
-    gap: 50px;
-    left: 35%;
-    list-style: none;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
-    top: -05%;
-    transform: translateY(40%);
+    padding: 5px;
+    margin-right: 1rem;
+}
+.header .flex .logo img{
+    margin-left: 30px;
+    width: 170px;
+
+}
+.header .flex .navbar a{
+    font-family: 'Nunito', sans-serif;
+    margin-left: 2em;
+    font-size: 1.2em;
+    color: var(--black);
+}
+.header .flex .navbar a:hover{
+    text-decoration: underline;
+    color: var(--main-color);
 }
 
-.nav-links a {
-    color: white;
-    font-size: 1.3em;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
+
+#menu-btn{
+    display: none;
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
 }
 
-.nav-links a:hover {
-    color: orange;
-    transition: all .3s;
+@media (max-width: 768px){
+    #menu-btn{
+        display: inline-block;
+        transition: .2s linear;
+    }
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+    .header .flex .navbar{
+        position: absolute;
+        top: 99%; left: 1; right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        border-bottom: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .3s linear;
+    }
+    .header .flex .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .header .flex .navbar a{
+        border-bottom: 1px solid ;
+        display: block;
+        margin: 2rem;
+    }
 }
 
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    .heading img{
+        height: 3rem;
+    }
+    .heading h3{
+        font-size: m;
+    }
+}
 
 .container {
     color: white;
@@ -177,18 +215,23 @@ nav {
 }
 
 #title h1 {
+    font-family: 'Merienda One', cursive;
     margin-top: 30px;
     font-size: 3.2em;
 }
 
 #title h2 {
+    font-family: 'Merienda One', cursive;
     font-size: 2.0em;
     margin-bottom: 30px;
 }
 
 #title p {
-    font-size: 1.3em;
+    border: 1px solid;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1em;
     text-align: justify;
+    
 }
 
 #coffee-drink {
@@ -304,43 +347,45 @@ nav {
 
 
 .footer .footer-container{
-    margin-top: 50px;
+    padding-top: 20px;
+    margin: 30px 0px 30px 0px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-    gap: 1.5rem;
+    gap: 1em;
     align-items: flex-start;
 }
 .footer .footer-container .footer-box{
     text-align: center;
-    
 }
 .footer .footer-container .footer-box i{
-    font-size: 2.5rem;
-    line-height: 6rem;
-    height: 6rem;
-    width: 6rem;
+    font-size: 2rem;
+    line-height: 4.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
     border-radius: 50%;
     background-color:  #be9c79;
     color: white;
     margin-bottom: .5rem;
 }
 .footer .footer-container .footer-box h1{
-    font-size: 1.8rem;
-    margin: .1rem 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
     font-weight: 2rem;
     color: black;
 }
 .footer .footer-container .footer-box p{
-    line-height: 2;
-    font-size: 1.6rem;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.23;
+    font-size: 1em;
     color: #666;
 }
 .footer .credit{
     text-align: center;
     margin-top: 1rem;
-    padding: 1rem;
-    border-top: .2rem solid black;
-    font-size: 1.6rem;
+    padding: 10px;
+    border-top: .1rem solid rgba(0, 0, 0, 0.301);
+    font-size: 1.1rem;
     color: black;
 }
 .footer .credit span{
