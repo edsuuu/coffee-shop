@@ -205,8 +205,8 @@ html {
     margin: 30px 0px 20px 40px;
     align-self: flex-start;
     border-radius: 15px;
-    width: 350px;
-    height: 350px;
+    text-align: center;
+    
 }
 
 #coffee-drink img {

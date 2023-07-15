@@ -8,7 +8,7 @@ Tv: acima de 1200px
 */
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .container {
         height: 80vh;
     }
@@ -46,15 +46,9 @@ Tv: acima de 1200px
 
     #coffee-drink {
         margin-top: 20px;
-        margin-left: 15px;
-        width: 320px;
-        height: 320px;
+        
     }
 
-    #coffee-drink img {
-        
-        width: 80%;
-    }
 
     .box-container {
         display: flex;
@@ -66,64 +60,22 @@ Tv: acima de 1200px
         flex-direction: column;
     }
 
-}
-
-
-@media (max-width: 768px) {
     #menu-btn {
         display: inline-block;
         transition: .2s linear;
     }
 
 
-#menu-btn.fa-times {
-    transform: rotate(180deg);
-}
-
-.header .flex .navbar {
-    text-align: center;
-    width: 200px;
-    position: absolute;
-    top: 99%;
-    left: 70.6%;
-    right: 30;
-    background-color: var(--white);
-    border-top: var(--border);
-    border-bottom: var(--border);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: .3s linear;
-}
-
-.header .flex .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.header .flex .navbar a {
-    border-bottom: 1px solid;
-    text-align: center;
-    display: block;
-    margin: 2rem;
-}
-}
-@media  (max-width: 550px) {
-    .header .flex .navbar {
-       
-    }
-}
-@media (max-width: 450px) {
-    html {
-        font-size: 65%;
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
     }
 
-    .heading img {
-        height: 3rem;
-    }
     .header .flex .navbar {
         text-align: center;
-        width: 130px;
+        width: 200px;
         position: absolute;
         top: 99%;
-        left: 60%;
+        left: 73%;
         right: 30;
         background-color: var(--white);
         border-top: var(--border);
@@ -132,6 +84,63 @@ Tv: acima de 1200px
         transition: .3s linear;
     }
 
-   
+    .header .flex .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .flex .navbar a {
+        border-bottom: 1px solid;
+        text-align: center;
+        display: block;
+        margin: 2rem;
+    }
 }
 
+@media (max-width: 550px) {
+    .header .flex .navbar {
+        left: 63%;
+    }
+   
+    #coffee-drink {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 65%;
+    }
+
+    .heading img {
+        height: 3rem;
+    }
+
+    .header .flex .navbar {
+        text-align: center;
+        width: 130px;
+        position: absolute;
+        top: 99%;
+        left: 58%;
+        right: 30;
+        background-color: var(--white);
+        border-top: var(--border);
+        border-bottom: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .3s linear;
+    }
+
+    #coffee-drink img {
+        margin: 0px 0px 0px 8px ;
+    }
+
+
+    #coffee-drink img {
+
+        width: 85%;
+    }
+
+
+}
