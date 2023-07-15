@@ -112,33 +112,13 @@ html {
 #menu-btn.fa-times {
     transform: rotate(180deg);
 }
-/* ARRUMAR O 768 E PARA CELULAR 
-
-FAZER UMA VERSAO PARA TABLET PARA CORRIGIR O MENU HAMBURGUER 
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .header .flex .navbar {
     text-align: center;
-    width: 300px;
+    width: 200px;
     position: absolute;
     top: 99%;
-    left: 63.6%;
+    left: 70.6%;
     right: 30;
     background-color: var(--white);
     border-top: var(--border);
@@ -159,20 +139,18 @@ FAZER UMA VERSAO PARA TABLET PARA CORRIGIR O MENU HAMBURGUER
 }
 }
 
-@media (max-width: 450px) {
-    html {
-        font-size: 60%;
-    }
+@media (max-width: 550px) {
+    
 
     .heading img {
         height: 3rem;
     }
     .header .flex .navbar {
         text-align: center;
-        width: 300px;
+        width: 200px;
         position: absolute;
         top: 99%;
-        left: 33%;
+        left: 60%;
         right: 30;
         background-color: var(--white);
         border-top: var(--border);
@@ -203,7 +181,7 @@ FAZER UMA VERSAO PARA TABLET PARA CORRIGIR O MENU HAMBURGUER
     /* font-family: 'Sriracha', cursive; */
     font-family: 'Merienda One', cursive;
     color: white;
-    font-size: 3em;
+    font-size: 2.3em;
 }
 
 #content-two {
@@ -212,7 +190,7 @@ FAZER UMA VERSAO PARA TABLET PARA CORRIGIR O MENU HAMBURGUER
     margin-left: 12%;
     text-align: start;
     width: 60%;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-top: 5px;
 }
 
@@ -274,9 +252,8 @@ FAZER UMA VERSAO PARA TABLET PARA CORRIGIR O MENU HAMBURGUER
 }
 
 #title p {
-    border: 1px solid;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: justify;
 
 }
