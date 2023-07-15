@@ -16,16 +16,16 @@ font-family: 'Merienda One', cursive;
     --main-color: #be9c79;
     --black: #000000;
     --white: #ffffff;
-    --light-color:#666666; 
+    --light-color: #666666;
     --border: 0.2rem solid var(--black);
-    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
 * {
     /* font-family: 'Nunito', sans-serif; */
     margin: 0;
     padding: 0;
-    
+
     /* text-transform: capitalize; */
     text-decoration: none;
 
@@ -50,89 +50,104 @@ font-family: 'Merienda One', cursive;
 }
 
 
-html{
-    
+html {
+
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
 }
 
-.header{
+.header {
     position: sticky;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: rgb(116, 112, 112);
     box-shadow: var(--box-shadow);
-    
+
 }
-.header .flex{
+
+.header .flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     padding: 5px;
-    margin-right: 1rem;
+    margin-right: 3rem;
 }
-.header .flex .logo img{
+
+.header .flex .logo img {
     margin-left: 30px;
     width: 170px;
 
 }
-.header .flex .navbar a{
+
+.header .flex .navbar a {
     font-family: 'Nunito', sans-serif;
     margin-left: 2em;
     font-size: 1.2em;
     color: var(--black);
 }
-.header .flex .navbar a:hover{
+
+.header .flex .navbar a:hover {
     text-decoration: underline;
     color: var(--main-color);
 }
 
 
-#menu-btn{
+#menu-btn {
     display: none;
     font-size: 2rem;
     color: var(--white);
     cursor: pointer;
 }
 
-@media (max-width: 768px){
-    #menu-btn{
+@media (max-width: 768px) {
+    #menu-btn {
         display: inline-block;
         transition: .2s linear;
     }
-    #menu-btn.fa-times{
-        transform: rotate(180deg);
-    }
-    .header .flex .navbar{
-        position: absolute;
-        top: 99%; left: 1; right: 0;
-        background-color: var(--white);
-        border-top: var(--border);
-        border-bottom: var(--border);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: .3s linear;
-    }
-    .header .flex .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-    .header .flex .navbar a{
-        border-bottom: 1px solid ;
-        display: block;
-        margin: 2rem;
-    }
 }
 
-@media (max-width: 450px){
-    html{
-        font-size: 50%;
+#menu-btn.fa-times {
+    transform: rotate(180deg);
+}
+
+.header .flex .navbar {
+    text-align: center;
+    width: 300px;
+    position: absolute;
+    top: 99%;
+    left: 42%;
+    right: 30;
+    background-color: var(--white);
+    border-top: var(--border);
+    border-bottom: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: .3s linear;
+}
+
+.header .flex .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.header .flex .navbar a {
+    border-bottom: 1px solid;
+    text-align: center;
+    display: block;
+    margin: 2rem;
+}
+
+
+@media (max-width: 450px) {
+    html {
+        font-size: 60%;
     }
-    .heading img{
+
+    .heading img {
         height: 3rem;
     }
-    .heading h3{
-        font-size: m;
-    }
+
 }
 
 .container {
@@ -231,7 +246,7 @@ html{
     font-family: 'Nunito', sans-serif;
     font-size: 1.1em;
     text-align: justify;
-    
+
 }
 
 #coffee-drink {
@@ -346,7 +361,7 @@ html{
 
 
 
-.footer .footer-container{
+.footer .footer-container {
     padding-top: 20px;
     margin: 30px 0px 30px 0px;
     display: grid;
@@ -354,33 +369,38 @@ html{
     gap: 1em;
     align-items: flex-start;
 }
-.footer .footer-container .footer-box{
+
+.footer .footer-container .footer-box {
     text-align: center;
 }
-.footer .footer-container .footer-box i{
+
+.footer .footer-container .footer-box i {
     font-size: 2rem;
     line-height: 4.5rem;
     height: 4.5rem;
     width: 4.5rem;
     border-radius: 50%;
-    background-color:  #be9c79;
+    background-color: #be9c79;
     color: white;
     margin-bottom: .5rem;
 }
-.footer .footer-container .footer-box h1{
+
+.footer .footer-container .footer-box h1 {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 1.5em;
     font-weight: 2rem;
     color: black;
 }
-.footer .footer-container .footer-box p{
+
+.footer .footer-container .footer-box p {
     font-family: 'Nunito', sans-serif;
     line-height: 1.23;
     font-size: 1em;
     color: #666;
 }
-.footer .credit{
+
+.footer .credit {
     text-align: center;
     margin-top: 1rem;
     padding: 10px;
@@ -388,6 +408,7 @@ html{
     font-size: 1.1rem;
     color: black;
 }
-.footer .credit span{
-    color:  #be9c79;
+
+.footer .credit span {
+    color: #be9c79;
 }
