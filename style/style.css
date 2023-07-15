@@ -107,18 +107,38 @@ html {
         display: inline-block;
         transition: .2s linear;
     }
-}
+
 
 #menu-btn.fa-times {
     transform: rotate(180deg);
 }
+/* ARRUMAR O 768 E PARA CELULAR 
+
+FAZER UMA VERSAO PARA TABLET PARA CORRIGIR O MENU HAMBURGUER 
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .header .flex .navbar {
     text-align: center;
     width: 300px;
     position: absolute;
     top: 99%;
-    left: 42%;
+    left: 63.6%;
     right: 30;
     background-color: var(--white);
     border-top: var(--border);
@@ -137,7 +157,7 @@ html {
     display: block;
     margin: 2rem;
 }
-
+}
 
 @media (max-width: 450px) {
     html {
@@ -147,7 +167,19 @@ html {
     .heading img {
         height: 3rem;
     }
-
+    .header .flex .navbar {
+        text-align: center;
+        width: 300px;
+        position: absolute;
+        top: 99%;
+        left: 33%;
+        right: 30;
+        background-color: var(--white);
+        border-top: var(--border);
+        border-bottom: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .3s linear;
+    }
 }
 
 .container {
