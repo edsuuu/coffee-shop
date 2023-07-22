@@ -96,6 +96,7 @@ Tv: acima de 1200px
     }
 }
 
+
 @media (max-width: 550px) {
     .header .flex .navbar {
         left: 63%;
@@ -111,7 +112,7 @@ Tv: acima de 1200px
 
 @media (max-width: 450px) {
     html {
-        font-size: 65%;
+        font-size: 70%;
     }
 
     .heading img {
@@ -123,7 +124,7 @@ Tv: acima de 1200px
         width: 130px;
         position: absolute;
         top: 99%;
-        left: 58%;
+        left: 65%;
         right: 30;
         background-color: var(--white);
         border-top: var(--border);

@@ -1,8 +1,7 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Passion+One&family=Sriracha&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Passion+One&family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap");
 
 /* 
 font-family: 'Inter', sans-serif;
@@ -13,354 +12,394 @@ font-family: 'Merienda One', cursive;
 */
 
 :root {
-    --main-color: #be9c79;
-    --black: #000000;
-    --white: #ffffff;
-    --light-color: #666666;
-    --border: 0.2rem solid var(--black);
-    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  --main-color: #be9c79;
+  --black: #000000;
+  --white: #ffffff;
+  --light-color: #666666;
+  --border: 0.2rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 * {
-    /* font-family: 'Nunito', sans-serif; */
-    margin: 0;
-    padding: 0;
+  /* font-family: 'Nunito', sans-serif; */
+  margin: 0;
+  padding: 0;
 
-    /* text-transform: capitalize; */
-    text-decoration: none;
-
+  /* text-transform: capitalize; */
+  text-decoration: none;
 }
 
 *::selection {
-    background-color: var(--main-color);
-    color: var(--white);
+  background-color: var(--main-color);
+  color: var(--white);
 }
 
 ::-webkit-scrollbar {
-    height: .2rem;
-    width: .6rem;
+  height: 0.2rem;
+  width: 0.6rem;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
-
 
 html {
-
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgb(116, 112, 112);
-    box-shadow: var(--box-shadow);
+/* MENU  */
 
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(116, 112, 112);
+  box-shadow: var(--box-shadow);
 }
 
 .header .flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    padding: 5px;
-    margin-right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 5px;
+  margin-right: 3rem;
 }
 
 .header .flex .logo img {
-    margin-left: 30px;
-    width: 170px;
-
+  margin-left: 30px;
+  width: 170px;
 }
 
 .header .flex .navbar a {
-    font-family: 'Nunito', sans-serif;
-    margin-left: 2em;
-    font-size: 1.2em;
-    color: var(--black);
+  font-family: "Nunito", sans-serif;
+  margin-left: 2em;
+  font-size: 1.2em;
+  color: var(--black);
 }
 
 .header .flex .navbar a:hover {
-    text-decoration: underline;
-    color: var(--main-color);
+  text-decoration: underline;
+  color: var(--main-color);
 }
-
 
 #menu-btn {
-    display: none;
-    font-size: 2rem;
-    color: var(--white);
-    cursor: pointer;
+  display: none;
+  font-size: 2rem;
+  color: var(--white);
+  cursor: pointer;
 }
 
+/* PRIMEIRO BLOCO DE CONTEUDO */
 
 .container {
-    color: white;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: url(../img/bg-img1.png) no-repeat;
-    background-position: left center;
-    background-size: cover;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.479);
-    height: 700px;
-
+  color: white;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(../img/bg-img1.png) no-repeat;
+  background-position: left center;
+  background-size: cover;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.479);
+  height: 700px;
 }
 
 #content-one {
-    align-self: start;
-    margin: -70px 12% -20px;
-    /* font-family: 'Sriracha', cursive; */
-    font-family: 'Merienda One', cursive;
-    color: white;
-    font-size: 2.3em;
+  align-self: start;
+  margin: -70px 12% -20px;
+  /* font-family: 'Sriracha', cursive; */
+  font-family: "Merienda One", cursive;
+  color: white;
+  font-size: 2.3em;
 }
 
 #content-two {
-    font-family: 'Nunito', sans-serif;
-    align-self: start;
-    margin-left: 12%;
-    text-align: start;
-    width: 60%;
-    font-size: 1.2em;
-    margin-top: 5px;
+  font-family: "Nunito", sans-serif;
+  align-self: start;
+  margin-left: 12%;
+  text-align: start;
+  width: 60%;
+  font-size: 1.2em;
+  margin-top: 5px;
 }
 
 .container #btn {
-    align-self: start;
-    margin-top: 40px;
-    margin-left: 23%;
-    width: 150px;
-    border: 1px solid rgb(5, 5, 5);
-    border-radius: 10px;
+  align-self: start;
+  margin-top: 40px;
+  margin-left: 23%;
+  width: 150px;
+  border: 1px solid rgb(5, 5, 5);
+  border-radius: 10px;
 }
 
 .container #btn a {
-    background-color: orange;
-    border-radius: 10px;
-    color: white;
-    display: flex;
-    font-family: 'Passion One', cursive;
-    font-size: 20px;
-    justify-content: center;
-    padding: 11px 30px 10px 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 90px;
-
+  background-color: orange;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  font-family: "Passion One", cursive;
+  font-size: 20px;
+  justify-content: center;
+  padding: 11px 30px 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 90px;
 }
 
 .container #btn a:hover {
-    background-color: rgba(247, 206, 129, 0.986);
-    color: black;
-    transition: .4s;
+  background-color: rgba(247, 206, 129, 0.986);
+  color: black;
+  transition: 0.4s;
 }
 
+/* SEGUNDO BLOCO DE CONTEUDO  */
+
 .container-two {
-    background-color: #be9c79;
-    display: flex;
-    flex-direction: row-reverse;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+  background-color: #be9c79;
+  display: flex;
+  flex-direction: row-reverse;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 #title {
-    margin: auto;
-    text-align: center;
-    width: 90%;
-
+  margin: auto;
+  text-align: center;
+  width: 90%;
 }
 
 #title h1 {
-    font-family: 'Merienda One', cursive;
-    margin-top: 30px;
-    font-size: 3.2em;
+  font-family: "Merienda One", cursive;
+  margin-top: 30px;
+  font-size: 3.2em;
 }
 
 #title h2 {
-    font-family: 'Merienda One', cursive;
-    font-size: 2.0em;
-    margin-bottom: 30px;
+  font-family: "Merienda One", cursive;
+  font-size: 2em;
+  margin-bottom: 30px;
 }
 
 #title p {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1em;
-    text-align: justify;
-
+  font-family: "Nunito", sans-serif;
+  font-size: 1em;
+  text-align: justify;
 }
 
 #coffee-drink {
-    margin: 30px 0px 20px 40px;
-    align-self: flex-start;
-    border-radius: 15px;
-    text-align: center;
-    
+  margin: 30px 0px 20px 40px;
+  align-self: flex-start;
+  border-radius: 15px;
+  text-align: center;
 }
 
 #coffee-drink img {
-    width: 350px;
-    border-radius: 15px;
-    border: 1px solid orange;
+  width: 350px;
+  border-radius: 15px;
+  border: 1px solid orange;
 }
 
 #title #btn {
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 150px;
-    border: 1px solid rgb(5, 5, 5);
-    border-radius: 10px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 150px;
+  border: 1px solid rgb(5, 5, 5);
+  border-radius: 10px;
 }
 
 .container-two #btn a {
-    background-color: orange;
-    border-radius: 10px;
-    color: white;
-    display: flex;
-    font-family: 'Passion One', cursive;
-    font-size: 20px;
-    justify-content: center;
-    padding: 11px 30px 10px 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 90px;
-
+  background-color: orange;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  font-family: "Passion One", cursive;
+  font-size: 20px;
+  justify-content: center;
+  padding: 11px 30px 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 90px;
 }
 
 .container-two #btn a:hover {
-    font-family: 'Passion One', cursive;
-    color: black;
-    transition: .4s;
+  font-family: "Passion One", cursive;
+  color: black;
+  transition: 0.4s;
 }
 
+/* BLOCO DE VARIEDADES  */
 
 .container-tree {
-    display: flex;
-    flex-direction: column;
-
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
 }
 
 .variedades {
-    align-self: center;
-
-
+  border: 1px solid;
+  align-self: center;
 }
 
 .variedades h1 {
-    font-family: 'Sriracha', cursive;
-    margin: 5px;
-    text-align: center;
-    font-size: 4em;
+  font-family: "Sriracha", cursive;
+  margin: 5px;
+  text-align: center;
+  font-size: 4em;
 }
 
 .variedades img {
-    width: 390px;
-    border-radius: 10px;
+  width: 390px;
+  border-radius: 10px;
 }
 
 .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .box {
-    margin: auto;
-    border: 1px solid;
-    width: 200px;
-    text-align: center;
-    padding: 20px 10px 10px 10px;
-
+  margin: auto;
+  border: 1px solid;
+  width: 200px;
+  text-align: center;
+  padding: 20px 10px 10px 10px;
 }
 
 .box img {
-    width: 130px;
-    padding: 10px;
-    border: 1px solid;
+  width: 130px;
+  padding: 10px;
+  border: 1px solid;
 }
+
+/* SEGUNDO BLOCO DE COFFEES
+
+
+refazer depois 
+
+*/
 
 .box-container-two {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-
+  border: 1px solid;
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.teste {
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+}
+.coffees-header {
+  border: 1px solid;
+  width: 100vw;
+  margin: 30px;
+  text-align: center;
+}
+.coffees-header h1 {
+  font-size: 3em;
+  font-family: "Merienda One", cursive;
+}
+.coffees-header img {
+  width: 390px;
+  border-radius: 10px;
 }
 
-.box-container-two .box {
-    margin: auto;
-    border: 1px solid;
-    width: 200px;
-    text-align: center;
-    padding: 20px 10px 10px 10px;
+.box-container-two .coffee-box {
+  border: 1px solid;
+  margin: auto;
+  width: 250px;
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+}
+.coffee-box img {
+  width: 230px;
+  padding: 10px;
+  border: 1px solid;
+}
+/* GALLERY  */
 
+.gallery-header {
 }
 
+.gallery .box-containerr {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30rem);
+  gap: 1em;
+  justify-content: center;
+}
+.gallery .box-containerr img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
+/* FOOTER E CONTATO  */
 
 .footer .footer-container {
-    padding-top: 20px;
-    margin: 30px 0px 30px 0px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-    gap: 1em;
-    align-items: flex-start;
+  padding-top: 20px;
+  margin: 30px 0px 30px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 1em;
+  align-items: flex-start;
 }
 
 .footer .footer-container .footer-box {
-    text-align: center;
+  text-align: center;
 }
 
 .footer .footer-container .footer-box i {
-    font-size: 2rem;
-    line-height: 4.5rem;
-    height: 4.5rem;
-    width: 4.5rem;
-    border-radius: 50%;
-    background-color: #be9c79;
-    color: white;
-    margin-bottom: .5rem;
+  font-size: 2rem;
+  line-height: 4.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  background-color: #be9c79;
+  color: white;
+  margin-bottom: 0.5rem;
 }
 
 .footer .footer-container .footer-box h1 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
-    font-weight: 2rem;
-    color: black;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 2rem;
+  color: black;
 }
 
 .footer .footer-container .footer-box p {
-    font-family: 'Nunito', sans-serif;
-    line-height: 1.23;
-    font-size: 1em;
-    color: #666;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.23;
+  font-size: 1em;
+  color: #666;
 }
 
 .footer .credit {
-    text-align: center;
-    margin-top: 1rem;
-    padding: 10px;
-    border-top: .1rem solid rgba(0, 0, 0, 0.301);
-    font-size: 1.1rem;
-    color: black;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 10px;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.301);
+  font-size: 1.1rem;
+  color: black;
 }
 
 .footer .credit span {
-    color: #be9c79;
+  color: #be9c79;
 }
