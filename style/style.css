@@ -335,7 +335,23 @@ refazer depois
 /* GALLERY  */
 
 .gallery-header {
+  border: 1px solid;
+  margin: 30px;
+  text-align: center;
 }
+
+.gallery-header h1 {
+  font-family: "Sriracha", cursive;
+  margin: 5px;
+  text-align: center;
+  font-size: 4em;
+}
+
+.gallery-header img {
+  width: 390px;
+  border-radius: 10px;
+}
+
 
 .gallery .box-containerr {
   display: grid;
