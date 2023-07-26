@@ -8,7 +8,11 @@ font-family: 'Inter', sans-serif;
 font-family: 'Passion One', cursive;
 font-family: 'Sriracha', cursive;
 font-family: 'Merienda One', cursive;
-
+Typical device break points
+Celular: ate 600px
+Tablet: 768px ate  992px
+Desktop: 992px ate 1200px 
+Tv: acima de 1200px 
 */
 
 :root {
@@ -21,11 +25,8 @@ font-family: 'Merienda One', cursive;
 }
 
 * {
-  /* font-family: 'Nunito', sans-serif; */
   margin: 0;
   padding: 0;
-
-  /* text-transform: capitalize; */
   text-decoration: none;
 }
 
@@ -48,6 +49,7 @@ font-family: 'Merienda One', cursive;
 }
 
 html {
+  background-color: white;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
@@ -116,7 +118,6 @@ html {
 #content-one {
   align-self: start;
   margin: -70px 12% -20px;
-  /* font-family: 'Sriracha', cursive; */
   font-family: "Merienda One", cursive;
   color: white;
   font-size: 2.3em;
@@ -132,7 +133,7 @@ html {
   margin-top: 5px;
 }
 
-.container #btn {
+#btn {
   align-self: start;
   margin-top: 40px;
   margin-left: 23%;
@@ -141,7 +142,7 @@ html {
   border-radius: 10px;
 }
 
-.container #btn a {
+#btn a {
   background-color: orange;
   border-radius: 10px;
   color: white;
@@ -155,18 +156,18 @@ html {
   width: 90px;
 }
 
-.container #btn a:hover {
+#btn a:hover {
   background-color: rgba(247, 206, 129, 0.986);
   color: black;
   transition: 0.4s;
 }
 
-
 .container-two {
   background-color: #be9c79;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row-reverse;
-  /* Mantemos o flex-direction para manter a imagem à esquerda */
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -177,16 +178,15 @@ html {
   width: 90%;
 }
 
-#title h1 {
+#title h1, h2 {
   font-family: "Merienda One", cursive;
   margin-top: 30px;
   font-size: 3.2em;
 }
 
 #title h2 {
-  font-family: "Merienda One", cursive;
+  margin: 0px 0px 30px 0px;
   font-size: 2em;
-  margin-bottom: 30px;
 }
 
 #title p {
@@ -209,51 +209,12 @@ html {
 }
 
 #title #btn {
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 150px;
-  border: 1px solid rgb(5, 5, 5);
-  border-radius: 10px;
-}
-
-.container-two #btn a {
-  background-color: orange;
-  border-radius: 10px;
-  color: white;
-  display: flex;
-  font-family: "Passion One", cursive;
-  font-size: 20px;
-  justify-content: center;
-  padding: 11px 30px 10px 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 90px;
-}
-
-.container-two #btn a:hover {
-  font-family: "Passion One", cursive;
-  color: black;
-  transition: 0.4s;
+  margin: 30px auto 30px auto;
 }
 
 /* SEGUNDO BLOCO DE COFFEES */
 
-
-.box-container-two {
-  border: 1px solid;
-  max-width: 1000px;
-  margin: 30px auto;
-}
-
-.teste {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
 .coffees-header {
-  margin: 30px;
   text-align: center;
 }
 
@@ -262,44 +223,55 @@ html {
   font-family: "Merienda One", cursive;
 }
 
-.coffees-header img {
-  max-width: 390px;
+.box-container-two {
+  border: 1px solid;
   border-radius: 10px;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.coffees-img {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
 }
 
 .coffee-box {
-
   text-align: center;
   padding: 20px 10px 10px 10px;
+
 }
 
 .coffee-box img {
-  max-width: 230px;
   border-radius: 10px;
-  padding: 10px;
 }
 
 /* BLOCO DE VARIEDADES  */
 
 .container-tree {
-  border: 1px solid;
   display: flex;
   flex-direction: column;
 }
 
-.variedades {
+.top-img {
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
   align-self: center;
+  margin-bottom: 30px;
 }
 
-.variedades h1 {
-  font-family: "Sriracha", cursive;
+.top-img h1 {
+  padding: 10px;
+  font-family: "Merienda One", cursive;
   margin: 5px;
   text-align: center;
   font-size: 4em;
 }
 
-.variedades img {
+.top-img img {
   width: 390px;
   border-radius: 10px;
 }
@@ -314,9 +286,8 @@ html {
 }
 
 .box {
-
   margin: auto;
-  border: 1px solid;
+  
   width: 200px;
   text-align: center;
   padding: 20px 10px 10px 10px;
@@ -330,39 +301,30 @@ html {
   border: 1px solid;
 }
 
-
 /* GALLERY  */
 
-.gallery-header {
-  margin: 30px;
-  text-align: center;
+.gallery {
+  color: white;
+  background-color: #625959;
+  padding-bottom: 30px;
 }
-
-.gallery-header h1 {
-  font-family: "Sriracha", cursive;
-  margin: 5px;
-  text-align: center;
-  font-size: 4em;
-}
-
-.gallery-header img {
-  width: 390px;
-  border-radius: 10px;
-}
-
 
 .gallery .box-containerr {
+
   display: grid;
   grid-template-columns: repeat(auto-fit, 30rem);
   gap: 1em;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .gallery .box-containerr img {
+  margin-top: 30px;
   border-radius: 10px;
   height: 100%;
   width: 100%;
   object-fit: cover;
+  box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.479);
 }
 
 /* FOOTER E CONTATO  */
@@ -417,4 +379,130 @@ html {
 
 .footer .credit span {
   color: #be9c79;
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+  .container {
+    height: 80vh;
+  }
+
+  #content-one {
+    margin: auto 1% -20px;
+    margin-top: 0px;
+    width: 95vw;
+    font-size: 2.1em;
+    text-align: center;
+  }
+
+  #content-two {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    font-size: 1.4em;
+  }
+
+  .container #btn {
+    margin: 40px auto 30px auto;
+  }
+
+  .container-two {
+    flex-direction: column;
+  }
+
+  .container-two #title {
+    margin-bottom: 20px;
+  }
+
+  #coffee-drink {
+    margin-top: 20px;
+  }
+
+
+  .box-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-container-two {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #menu-btn {
+    display: inline-block;
+    transition: .2s linear;
+  }
+
+
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .flex .navbar {
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    top: 99%;
+    left: 73%;
+    right: 30;
+    background-color: var(--white);
+    border-top: var(--border);
+    border-bottom: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: .3s linear;
+  }
+
+  .header .flex .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .header .flex .navbar a {
+    border-bottom: 1px solid;
+    text-align: center;
+    display: block;
+    margin: 2rem;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .header .flex .navbar {
+    left: 63%;
+  }
+
+  #coffee-drink {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 70%;
+  }
+
+  .header .flex .navbar {
+    text-align: center;
+    width: 130px;
+    position: absolute;
+    top: 99%;
+    left: 65%;
+    right: 30;
+    background-color: var(--white);
+    border-top: var(--border);
+    border-bottom: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: .3s linear;
+  }
+
+  #coffee-drink img {
+    margin: 0px 0px 0px 8px;
+  }
+
+  #coffee-drink img {
+    width: 85%;
+  }
 }
