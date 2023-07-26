@@ -161,12 +161,12 @@ html {
   transition: 0.4s;
 }
 
-/* SEGUNDO BLOCO DE CONTEUDO  */
 
 .container-two {
   background-color: #be9c79;
   display: flex;
   flex-direction: row-reverse;
+  /* Mantemos o flex-direction para manter a imagem à esquerda */
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -237,6 +237,48 @@ html {
   transition: 0.4s;
 }
 
+/* SEGUNDO BLOCO DE COFFEES */
+
+
+.box-container-two {
+  border: 1px solid;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.teste {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.coffees-header {
+  margin: 30px;
+  text-align: center;
+}
+
+.coffees-header h1 {
+  font-size: 3em;
+  font-family: "Merienda One", cursive;
+}
+
+.coffees-header img {
+  max-width: 390px;
+  border-radius: 10px;
+}
+
+.coffee-box {
+
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+}
+
+.coffee-box img {
+  max-width: 230px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 /* BLOCO DE VARIEDADES  */
 
 .container-tree {
@@ -246,7 +288,7 @@ html {
 }
 
 .variedades {
-  border: 1px solid;
+
   align-self: center;
 }
 
@@ -272,6 +314,7 @@ html {
 }
 
 .box {
+
   margin: auto;
   border: 1px solid;
   width: 200px;
@@ -280,62 +323,17 @@ html {
 }
 
 .box img {
+  border: 1px solid black;
+  border-radius: 10px;
   width: 130px;
   padding: 10px;
   border: 1px solid;
 }
 
-/* SEGUNDO BLOCO DE COFFEES
 
-
-refazer depois 
-
-*/
-
-.box-container-two {
-  border: 1px solid;
-  width: 1000px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.teste {
-  border: 1px solid;
-  display: flex;
-  flex-wrap: wrap;
-}
-.coffees-header {
-  border: 1px solid;
-  width: 100vw;
-  margin: 30px;
-  text-align: center;
-}
-.coffees-header h1 {
-  font-size: 3em;
-  font-family: "Merienda One", cursive;
-}
-.coffees-header img {
-  width: 390px;
-  border-radius: 10px;
-}
-
-.box-container-two .coffee-box {
-  border: 1px solid;
-  margin: auto;
-  width: 250px;
-  text-align: center;
-  padding: 20px 10px 10px 10px;
-}
-.coffee-box img {
-  width: 230px;
-  padding: 10px;
-  border: 1px solid;
-}
 /* GALLERY  */
 
 .gallery-header {
-  border: 1px solid;
   margin: 30px;
   text-align: center;
 }
@@ -359,6 +357,7 @@ refazer depois
   gap: 1em;
   justify-content: center;
 }
+
 .gallery .box-containerr img {
   border-radius: 10px;
   height: 100%;

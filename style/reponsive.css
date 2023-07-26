@@ -29,9 +29,6 @@ Tv: acima de 1200px
         font-size: 1.4em;
     }
 
-    /* TAG DE MARGIN CIMA, ESQUERDA, BAIXO, DIREITA  */
-
-
     .container #btn {
         margin: 40px auto 30px auto;
     }
@@ -46,7 +43,7 @@ Tv: acima de 1200px
 
     #coffee-drink {
         margin-top: 20px;
-        
+
     }
 
 
@@ -101,7 +98,7 @@ Tv: acima de 1200px
     .header .flex .navbar {
         left: 63%;
     }
-   
+
     #coffee-drink {
         margin-left: auto;
         margin-right: auto;
@@ -134,7 +131,7 @@ Tv: acima de 1200px
     }
 
     #coffee-drink img {
-        margin: 0px 0px 0px 8px ;
+        margin: 0px 0px 0px 8px;
     }
 
 
