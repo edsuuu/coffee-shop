@@ -211,6 +211,63 @@ html {
 #title #btn {
   margin: 30px auto 30px auto;
 }
+/* BLOCO DE VARIEDADES  */
+
+.container-tree {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-img {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.top-img h1 {
+  padding: 10px;
+  font-family: "Merienda One", cursive;
+  margin: 5px;
+  text-align: center;
+  font-size: 4em;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
+}
+
+.top-img img {
+  box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.479);
+  width: 390px;
+  border-radius: 10px;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.box {
+  margin: auto;
+  width: 200px;
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+}
+
+.box img {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.479);
+  width: 130px;
+  padding: 10px;
+  border: 1px solid;
+  
+}
 
 /* SEGUNDO BLOCO DE COFFEES */
 
@@ -244,69 +301,18 @@ html {
 
 .coffee-box img {
   border-radius: 10px;
+  box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.479);
 }
 
-/* BLOCO DE VARIEDADES  */
-
-.container-tree {
-  display: flex;
-  flex-direction: column;
-}
-
-.top-img {
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  align-self: center;
-  margin-bottom: 30px;
-}
-
-.top-img h1 {
-  padding: 10px;
-  font-family: "Merienda One", cursive;
-  margin: 5px;
-  text-align: center;
-  font-size: 4em;
-}
-
-.top-img img {
-  width: 390px;
-  border-radius: 10px;
-}
-
-.box-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.box {
-  margin: auto;
-  
-  width: 200px;
-  text-align: center;
-  padding: 20px 10px 10px 10px;
-}
-
-.box img {
-  border: 1px solid black;
-  border-radius: 10px;
-  width: 130px;
-  padding: 10px;
-  border: 1px solid;
-}
 
 /* GALLERY  */
 
 .gallery {
   color: white;
   background-color: #625959;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
+  border-radius: 10px;
+
 }
 
 .gallery .box-containerr {
